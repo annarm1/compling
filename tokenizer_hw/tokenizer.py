@@ -40,7 +40,7 @@ class TextTokenizer:
             tokens = word_tokenize(text)
             return tokens
         except ImportError:
-            return ["Ошибка: библиотека NLTK не установлена"]
+            return ["Ошибка: библиотека NLTK не установлена. Установите с помощью pip install nltk"]
 
     def spacy_tokenize(self, text):
         """
@@ -92,4 +92,5 @@ def demo():
 
 
 if __name__ == "__main__":
+
     demo()
